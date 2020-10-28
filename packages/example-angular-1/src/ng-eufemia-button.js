@@ -4,11 +4,17 @@
  */
 
 import angular from 'angular';
-import { react2angular } from 'react2angular';
+import {
+  react2angular
+} from 'react2angular';
 
 // 1. Import the Button
-import { Button } from 'dnb-ui-lib';
-import { bell_medium as Bell } from 'dnb-ui-lib/icons';
+import {
+  Button
+} from 'dnb-ui-lib';
+import {
+  bell_medium as Bell
+} from 'dnb-ui-lib/icons';
 
 const ngEufemiaButton = angular.module('eufemiaButton', []);
 
@@ -29,6 +35,7 @@ ngEufemiaButton.directive('eufemiaButtonDirective', () => {
   <eufemia-button
     text="text"
     icon="icon"
+    icon_position="left"
     on-click="onClick"
   ></eufemia-button>
 `
